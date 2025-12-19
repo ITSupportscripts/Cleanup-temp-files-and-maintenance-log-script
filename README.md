@@ -1,8 +1,8 @@
-# Cleanup Temp Files and Maintenance Log Script
+# Cleanup temp files and maintenance log v1.0.bat
 
 ## Overview
 
-**Cleanup Temp Files and Maintenance Log v1.0** is a Windows Batch (`.bat`) script designed to perform routine system maintenance by safely cleaning temporary files and selected Windows maintenance log directories.
+**Cleanup temp files and maintenance log v1.0.bat** is a Windows Batch (`.bat`) script designed to perform routine system maintenance by safely cleaning temporary files and selected Windows maintenance log directories.
 The script includes structured logging, user interaction via a menu-driven interface, and safeguards to avoid unintended deletions.
 
 This script is intended for **IT administrators, support technicians, and advanced users** performing local system maintenance on Windows devices.
