@@ -3,6 +3,7 @@ setlocal EnableExtensions EnableDelayedExpansion
 title Cleanup temp files and maintenance log v1.0.bat
 
 rem ============================================================
+rem  - Runs elevated (self-relaunches as admin if needed)
 rem  - Per-run logging with retries and summary
 rem ============================================================
 
@@ -184,4 +185,3 @@ set "MSG=%~1"
 >>"%LOG_PATH%" echo %MSG% 2>nul
 
 exit /b 0
-
