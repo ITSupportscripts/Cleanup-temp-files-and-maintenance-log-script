@@ -1,8 +1,12 @@
 @echo off
 setlocal EnableExtensions EnableDelayedExpansion
+title Cleanup temp files and maintenance log v1.0.bat
 
-rem -----------------------------------------------------------------
-rem Script identity
+rem ============================================================
+rem  - Runs elevated (self-relaunches as admin if needed)
+rem  - Per-run logging with retries and summary
+rem ============================================================
+
 set "SCRIPT_NAME=Cleanup temp files and maintenance log v1.0.bat"
 set "SCRIPT_VERSION=1.0"
 
@@ -179,4 +183,5 @@ exit /b 0
 rem Safe logging: if log path is not writable, still allow script to run
 set "MSG=%~1"
 >>"%LOG_PATH%" echo %MSG% 2>nul
+
 exit /b 0
